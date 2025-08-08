@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketFlowNew/newCrypto</title>
+    <!--Aqui van los css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/colorsMarketFN.css">
+    <link rel="stylesheet" href="/css/positions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/livePrice.css">
+    <link rel="shortcut icon" href="img/LogoNL1.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <div>
+        <!--Menu-->
+        <div id="menu-placeholder"></div>
+
+        <!--Carousel Price-->
+
+        <div>
+            <div id="menu-placeholder"></div>
+
+        </div>
+        <div class="carousel-container">
+            <div class="carousel" id="priceLive"></div>
+        </div>
+
+        <div class="attribution">
+            <img src="data:image/png;base64,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"
+                alt="CoinGecko Logo" />
+            Data provide by <a href="https://www.coingecko.com" target="_blank" rel="noopener noreferrer">CoinGecko</a>
+        </div>
+    </div>
+
+    <!--Dark Mode-->
+    <div>
+        <div class="container py-4">
+            <div class="text-end mb-3">
+                <button id="botonCambiarModoOscuro" class="btn btn-warning">Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Inicio del código de mi pantalla-->
+    <div class="container py-4">
+
+
+        <div class="d-flex ml-3">
+            <input id="filtroTexto" class="form-control" placeholder="Search" style="width: 225px;">
+            <select id="filtroCategoria" class="form-control" style="width: 225px; margin-left: 10px;">
+                <option value="0">All Categories</option>
+                <option value="1">Short Reading</option>
+                <option value="2">Medium Reading</option>
+                <option value="3">Long Reading</option>
+            </select>
+
+        
+        </div>
+        
+        
+        <!--CRnews-->
+
+        <div class="contedorVideoJuegos" id="contenedor-videojuegos">
+        </div>
+
+
+        <!--Modales Por cada video juego, debe existir un modal-->
+        <div id="modales-videojuegos"></div>
+    </div>
+    <!--Fin del código de mi pantalla-->
+    <div id="footer-placeholder"></div>
+
+    <!--Aqui van los js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="js/anexos.js"></script>
+    <script src="js/eventosGenerales.js"></script>
+    <script src="js/newCrypto.js"></script>
+    <script src="js/livePrice.js"></script>
+</body>
+
+</html>
