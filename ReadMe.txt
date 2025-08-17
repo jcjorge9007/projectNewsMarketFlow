@@ -1,8 +1,10 @@
 📰 MarketFlowNews — Your Crypto News Hub
 MarketFlowNews is a web-based platform designed to provide a visually engaging and educational experience about the cryptocurrency market. It delivers real-time data, categorized analysis, and interactive visualizations by integrating external sources like CoinGecko and Coin360.
 
+
+
 🌐 Project Demo
-You can preview the project by opening the HTML files directly in your browser (recommended to use a local server for full functionality).
+You can preview the project by opening the HTML files directly in your browser (recommended to use a local server).
 
 🚀 Key Features
 📈 Live Price Ticker: Real-time cryptocurrency price updates powered by the CoinGecko API.
